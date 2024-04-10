@@ -21,6 +21,10 @@
 		548234DE2BC6061E0023AA21 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 548234DD2BC6061E0023AA21 /* RealmSwift */; };
 		548234E02BC614940023AA21 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234DF2BC614940023AA21 /* Color+Codable.swift */; };
 		548234E32BC619370023AA21 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 548234E22BC619370023AA21 /* ding.wav */; };
+		548234E72BC61C1B0023AA21 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234E62BC61C1B0023AA21 /* BaseView.swift */; };
+		548234E92BC61D590023AA21 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234E82BC61D590023AA21 /* SideMenu.swift */; };
+		548234EB2BC61E3B0023AA21 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234EA2BC61E3B0023AA21 /* WorkoutsView.swift */; };
+		548234ED2BC627B70023AA21 /* AddWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234EC2BC627B70023AA21 /* AddWorkout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		548234D82BC5E8490023AA21 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		548234DF2BC614940023AA21 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		548234E22BC619370023AA21 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ding.wav; path = "../../../../Downloads/Scrumdinger-realm/Scrumdinger/Resources/ding.wav"; sourceTree = "<group>"; };
+		548234E62BC61C1B0023AA21 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		548234E82BC61D590023AA21 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		548234EA2BC61E3B0023AA21 /* WorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
+		548234EC2BC627B70023AA21 /* AddWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,10 @@
 		548234D02BC5CB6A0023AA21 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				548234E62BC61C1B0023AA21 /* BaseView.swift */,
+				548234E82BC61D590023AA21 /* SideMenu.swift */,
+				548234EA2BC61E3B0023AA21 /* WorkoutsView.swift */,
+				548234EC2BC627B70023AA21 /* AddWorkout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -320,8 +332,12 @@
 			files = (
 				548234D92BC5E8490023AA21 /* History.swift in Sources */,
 				548234D52BC5D8A20023AA21 /* Tint.swift in Sources */,
+				548234EB2BC61E3B0023AA21 /* WorkoutsView.swift in Sources */,
 				548234A72BC5CB2D0023AA21 /* ContentView.swift in Sources */,
+				548234E92BC61D590023AA21 /* SideMenu.swift in Sources */,
+				548234ED2BC627B70023AA21 /* AddWorkout.swift in Sources */,
 				548234A52BC5CB2D0023AA21 /* DailyWorkoutApp.swift in Sources */,
+				548234E72BC61C1B0023AA21 /* BaseView.swift in Sources */,
 				548234E02BC614940023AA21 /* Color+Codable.swift in Sources */,
 				548234D22BC5D0B40023AA21 /* DailyWorkout.swift in Sources */,
 			);
