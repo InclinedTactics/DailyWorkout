@@ -14,8 +14,13 @@
 		548234B72BC5CB2F0023AA21 /* DailyWorkoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234B62BC5CB2F0023AA21 /* DailyWorkoutTests.swift */; };
 		548234C12BC5CB2F0023AA21 /* DailyWorkoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234C02BC5CB2F0023AA21 /* DailyWorkoutUITests.swift */; };
 		548234C32BC5CB2F0023AA21 /* DailyWorkoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234C22BC5CB2F0023AA21 /* DailyWorkoutUITestsLaunchTests.swift */; };
-		548234D22BC5D0B40023AA21 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234D12BC5D0B40023AA21 /* Workout.swift */; };
+		548234D22BC5D0B40023AA21 /* DailyWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234D12BC5D0B40023AA21 /* DailyWorkout.swift */; };
 		548234D52BC5D8A20023AA21 /* Tint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234D42BC5D8A20023AA21 /* Tint.swift */; };
+		548234D92BC5E8490023AA21 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234D82BC5E8490023AA21 /* History.swift */; };
+		548234DC2BC6061E0023AA21 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 548234DB2BC6061E0023AA21 /* Realm */; };
+		548234DE2BC6061E0023AA21 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 548234DD2BC6061E0023AA21 /* RealmSwift */; };
+		548234E02BC614940023AA21 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548234DF2BC614940023AA21 /* Color+Codable.swift */; };
+		548234E32BC619370023AA21 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 548234E22BC619370023AA21 /* ding.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +52,11 @@
 		548234BC2BC5CB2F0023AA21 /* DailyWorkoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyWorkoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		548234C02BC5CB2F0023AA21 /* DailyWorkoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkoutUITests.swift; sourceTree = "<group>"; };
 		548234C22BC5CB2F0023AA21 /* DailyWorkoutUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkoutUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		548234D12BC5D0B40023AA21 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		548234D12BC5D0B40023AA21 /* DailyWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkout.swift; sourceTree = "<group>"; };
 		548234D42BC5D8A20023AA21 /* Tint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tint.swift; sourceTree = "<group>"; };
+		548234D82BC5E8490023AA21 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		548234DF2BC614940023AA21 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
+		548234E22BC619370023AA21 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ding.wav; path = "../../../../Downloads/Scrumdinger-realm/Scrumdinger/Resources/ding.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				548234DE2BC6061E0023AA21 /* RealmSwift in Frameworks */,
+				548234DC2BC6061E0023AA21 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +109,7 @@
 		548234A32BC5CB2D0023AA21 /* DailyWorkout */ = {
 			isa = PBXGroup;
 			children = (
+				548234E12BC619240023AA21 /* Resources */,
 				548234D32BC5D88E0023AA21 /* SupportFiles */,
 				548234D02BC5CB6A0023AA21 /* Views */,
 				548234CF2BC5CB5E0023AA21 /* Models */,
@@ -139,7 +150,10 @@
 		548234CF2BC5CB5E0023AA21 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				548234D12BC5D0B40023AA21 /* Workout.swift */,
+				548234D42BC5D8A20023AA21 /* Tint.swift */,
+				548234D12BC5D0B40023AA21 /* DailyWorkout.swift */,
+				548234D82BC5E8490023AA21 /* History.swift */,
+				548234DF2BC614940023AA21 /* Color+Codable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -154,9 +168,16 @@
 		548234D32BC5D88E0023AA21 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				548234D42BC5D8A20023AA21 /* Tint.swift */,
 			);
 			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		548234E12BC619240023AA21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				548234E22BC619370023AA21 /* ding.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +196,10 @@
 			dependencies = (
 			);
 			name = DailyWorkout;
+			packageProductDependencies = (
+				548234DB2BC6061E0023AA21 /* Realm */,
+				548234DD2BC6061E0023AA21 /* RealmSwift */,
+			);
 			productName = DailyWorkout;
 			productReference = 548234A12BC5CB2D0023AA21 /* DailyWorkout.app */;
 			productType = "com.apple.product-type.application";
@@ -247,6 +272,9 @@
 				Base,
 			);
 			mainGroup = 548234982BC5CB2D0023AA21;
+			packageReferences = (
+				548234DA2BC6061E0023AA21 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 548234A22BC5CB2D0023AA21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				548234E32BC619370023AA21 /* ding.wav in Resources */,
 				548234AD2BC5CB2E0023AA21 /* Preview Assets.xcassets in Resources */,
 				548234A92BC5CB2E0023AA21 /* Assets.xcassets in Resources */,
 			);
@@ -289,10 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				548234D92BC5E8490023AA21 /* History.swift in Sources */,
 				548234D52BC5D8A20023AA21 /* Tint.swift in Sources */,
 				548234A72BC5CB2D0023AA21 /* ContentView.swift in Sources */,
 				548234A52BC5CB2D0023AA21 /* DailyWorkoutApp.swift in Sources */,
-				548234D22BC5D0B40023AA21 /* Workout.swift in Sources */,
+				548234E02BC614940023AA21 /* Color+Codable.swift in Sources */,
+				548234D22BC5D0B40023AA21 /* DailyWorkout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +680,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		548234DA2BC6061E0023AA21 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		548234DB2BC6061E0023AA21 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 548234DA2BC6061E0023AA21 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		548234DD2BC6061E0023AA21 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 548234DA2BC6061E0023AA21 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 548234992BC5CB2D0023AA21 /* Project object */;
 }
